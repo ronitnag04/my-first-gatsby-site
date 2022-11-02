@@ -23,8 +23,6 @@ const codeStyles = {
   borderRadius: 4,
 }
 
-const hello = 1
-
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
