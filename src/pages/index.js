@@ -1,8 +1,12 @@
 import * as React from "react"
+import './index.css'
+import Navbar from "../components/Navbar"
+
 
 const IndexPage = () => {
   return (
-    <p> Hello</p>
+    <Navbar></Navbar>
+    
     
   )
 }

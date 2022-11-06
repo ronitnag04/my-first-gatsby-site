@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+html{
+    background-image: url("../images/footer_art.png");
+    background-color: #042444;
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    margin-left: -50vw;
+    height: 8vh;
+    left: 50%;
+    background-color: #1A3A5E;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height:4vh;
+    padding-left: 3rem;
+}
+
+.navbar-links{
+    height:inherit;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-right: -47vw;
+    right:50%
+}
+
+.navbar-link{
+    margin: 0 1vw;
+}
+
+a{
+    font-family: 'Bebas Neue', cursive;
+    font-size : 50px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #d1d3d4;
+    position: relative;
+}
+
+/*
+
+    font-family: 'Bebas Neue', cursive;
+    font-size : 23px;
+    text-decoration: none;
+    color: #d1d3d4;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 1vw;
+    transition: all 200ms ease-in;
+    position: relative;
+    :after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: #d1d3d4;
+        height: 1px;
+        transition: all 0.4s ease-in;
+    }
+    :hover {
+        color: #d1d3d4;
+        ::after {
+        width: 100%;
+        }
+    }
+  }*/
