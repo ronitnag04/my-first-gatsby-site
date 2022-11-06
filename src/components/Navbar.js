@@ -5,11 +5,9 @@ import image from '../images/basic_logo.png'
 const NavbarLink = ({link, name}) => {
     return(
         <div className='navbar-link'>
-            <h1 >
-                <a href={link}>
-                    {name}
-                </a>
-            </h1>
+            <a href={link}>
+                <h1>{name}</h1>                
+            </a>
         </div>
         
     )
@@ -19,10 +17,10 @@ const NavbarLink = ({link, name}) => {
 const NavbarLinks = () => {
   return (
     <div className='navbar-links'>
-        <NavbarLink link='https://www.youtube.com/watch?v=LLFhKaqnWwk' name='Introduction'/>
-        <NavbarLink link='https://www.youtube.com/watch?v=LLFhKaqnWwk' name='Modules'/>
-        <NavbarLink link='https://www.youtube.com/watch?v=LLFhKaqnWwk' name='Materials'/>
-        <NavbarLink link='https://www.youtube.com/watch?v=LLFhKaqnWwk' name='About'/>
+        <NavbarLink link='https://bd.berkeley.edu/online_course/intro/' name='Introduction'/>
+        <NavbarLink link='https://bd.berkeley.edu/online_course/schedule/' name='Modules'/>
+        <NavbarLink link='https://bd.berkeley.edu/online_course/materials/' name='Materials'/>
+        <NavbarLink link='https://bd.berkeley.edu/online_course/about/' name='About'/>
     </div>
   )
 }
@@ -34,8 +32,6 @@ const Navbar = () => {
     <div className='navbar'>
         <img className='logo' src={image} alt='BDAB Logo'></img>
         <NavbarLinks/>
-        
-
     </div>
   )
 }

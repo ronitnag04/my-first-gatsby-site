@@ -6,6 +6,23 @@ html{
     background-color: #042444;
 }
 
+
+a{
+    font-family: inherit;
+    font-size : inherit;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #d1d3d4;
+    position: relative;
+}
+
+h1{
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+
 .navbar{
     width: 100%;
     position: absolute;
@@ -33,44 +50,33 @@ html{
 
 .navbar-link{
     margin: 0 1vw;
-}
-
-a{
     font-family: 'Bebas Neue', cursive;
     font-size : 50px;
-    font-weight: lighter;
-    text-decoration: none;
-    color: #d1d3d4;
-    position: relative;
 }
 
-/*
+.sidebar{
+    width: 10%;
+    position: absolute;
+    margin-left: -48vw;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: bottom;
+}
 
-    font-family: 'Bebas Neue', cursive;
-    font-size : 23px;
-    text-decoration: none;
-    color: #d1d3d4;
-    display: inline-block;
-    white-space: nowrap;
+.sidebar-links{
+    position: absolute;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-items: center;
+}
+
+
+.sidebar-link{
     margin: 0 1vw;
-    transition: all 200ms ease-in;
-    position: relative;
-    :after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 0%;
-        content: ".";
-        color: transparent;
-        background: #d1d3d4;
-        height: 1px;
-        transition: all 0.4s ease-in;
-    }
-    :hover {
-        color: #d1d3d4;
-        ::after {
-        width: 100%;
-        }
-    }
-  }*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 3px;
+}
