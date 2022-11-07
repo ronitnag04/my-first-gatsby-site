@@ -38,7 +38,7 @@ h1{
 
 .logo{
     height:4vh;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 .navbar-links{
@@ -53,7 +53,7 @@ h1{
 .navbar-link-container{
     margin: 0 1vw;
     font-family: 'Bebas Neue', cursive;
-    font-size : 50px;
+    font-size : 25px;
 }
 
 .navbar-link{
@@ -61,7 +61,7 @@ h1{
 	transition: 0.2s background-size;
 	background-position: left bottom;
     font-family: 'Bebas Neue', cursive;
-    font-size : 50px;
+    font-size : 25px;
 }
 
 .navbar-link:hover {
@@ -76,7 +76,7 @@ h1{
 .sidebar{
     width: 10%;
     float:left;
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding-right:3%;
 }
 
@@ -88,7 +88,7 @@ h1{
 .sidebar-link-container{
     margin: 0 1vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     padding-top: 3px;
 	text-decoration: none;
@@ -103,7 +103,7 @@ h1{
 .module-body{
     width:87%;
     float:right;
-    margin-top: 5vh;  
+    margin-top: 2vh;  
 }
 
 .module-video-section{
@@ -113,14 +113,14 @@ h1{
 
 .module-video-links-container{
     width:24%;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-left:3%;
     float:right;
 
 }
 
 .video-icon{
-    padding-right: 20px;
+    padding-right: 10px;
     filter: contrast(100%)
 }
 
@@ -131,22 +131,22 @@ h1{
 
 .module-video-link-button{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
     word-spacing: 2px;
     text-align: left;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .module-video-link{
-    font-size: 30px;
+    font-size: 15px;
 }
 
 
 .module-header{
-    line-height: 30px;
+    line-height: 15px;
     margin-left: 20px;
 }
 
@@ -154,7 +154,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
     text-transform: lowercase;
     color: #f2f2f3;
     opacity: 0.5;
@@ -164,7 +164,7 @@ h1{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 50px;
     color: white;
 }
 

@@ -19,7 +19,7 @@ const ModuleVideoLink = ({videoId, videoName, curVideo, setCurVideo}) => {
         <img 
             src={videoId===curVideo ? videoIconBlue : videoIconWhite} 
             alt='video icon' 
-            height='70px'
+            height='35px'
             className='video-icon'
         ></img>
         
