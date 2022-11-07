@@ -7,28 +7,30 @@ html{
 }
 
 
+
 a{
     font-family: inherit;
     font-size : inherit;
     font-weight: lighter;
-    text-decoration: none;
     color: #d1d3d4;
     position: relative;
+	text-decoration: none;
 }
+
 
 h1{
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
+    background: inherit;
+	transition: inherit;
+	background-position: inherit;
 }
-
 
 .navbar{
     width: 100%;
-    position: absolute;
-    margin-left: -50vw;
     height: 8vh;
-    left: 50%;
+    min-height: 30px;
     background-color: #1A3A5E;
     display: flex;
     align-items: center;
@@ -48,35 +50,80 @@ h1{
     right:50%
 }
 
-.navbar-link{
+.navbar-link-container{
     margin: 0 1vw;
     font-family: 'Bebas Neue', cursive;
     font-size : 50px;
 }
 
+.navbar-link{
+	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 0.2s background-size;
+	background-position: left bottom;
+    font-family: 'Bebas Neue', cursive;
+    font-size : 50px;
+}
+
+.navbar-link:hover {
+	background-size: 100% 0.1em;
+}
+
+
+.main-body-container{
+    padding: 10px;
+}
+
 .sidebar{
     width: 10%;
-    position: absolute;
-    margin-left: -48vw;
-    left: 50%;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-items: bottom;
+    float:left;
+    margin-top: 10vh;
+    padding-right:3%;
 }
 
 .sidebar-links{
-    position: absolute;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    justify-items: center;
+    position: relative;
 }
 
 
-.sidebar-link{
+.sidebar-link-container{
     margin: 0 1vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: white;
     padding-top: 3px;
+	text-decoration: none;
+}
+
+.sidebar-link:hover{
+    text-decoration: underline;
+}
+
+.module-body{
+    width:87%;
+    float:right;
+    margin-top: 5vh;
+    align-items: center;    
+}
+
+.module-header{
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.module-title-num{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: lowercase;
+    color: #f2f2f3;
+    opacity: 0.5;
+}
+
+.module-title{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
 }
