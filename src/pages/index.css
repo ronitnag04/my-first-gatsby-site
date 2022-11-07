@@ -114,7 +114,7 @@ h1{
 .module-video-links-container{
     width:24%;
     padding-top: 1px;
-    padding-left:3%;
+    margin-left:3%;
     float:right;
 
 }
@@ -173,7 +173,6 @@ h1{
 }
 
 
-
 .video-container {
     /* 16:9 aspect ratio */
     padding-top: 56.25%;
@@ -189,4 +188,59 @@ h1{
     width: 100%;
 }
 
+.row3{
+    display:flex;
+    padding-top: 40px;
+}
+
+.common-questions-container{
+    width:70%;
+    float: left;
+    background-color: #214667;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    overflow-y:auto;
+    height:400px;
+}
+
+.common-questions-line{
+    height:4px;
+    margin-top: -2px;
+    border-width: 0px;
+    background-color: white;
+}
+
+.questions-container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.common-questions-question{
+    font-size: 20px;
+}
+
+.common-questions-answer{
+    font-size: 15px;
+    color: #C0C0C1;
+}
+
+.common-questions-instructor-name{
+    font-size: 15px;
+    justify-self: right;
+    text-align: right;
+    color: #C0C0C1;
+}
+
+
+
+.resources-container{
+    width:24%;
+    margin-left: 3%;
+    background-color: #214667;
+    border-radius: 10px;
+}
 

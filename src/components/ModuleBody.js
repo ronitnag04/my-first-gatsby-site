@@ -1,11 +1,13 @@
 import React from 'react'
+import CommonQuestions from './CommonQuestions'
 import ModuleHeader from './ModuleHeader'
 import ModuleVideo from './ModuleVideo'
 import ModuleVideoLinksTab from './ModuleVideoLinksTab'
+import Resources from './Resources'
 
 
 
-const ModuleBody = ({moduleNum, title, curVideo, setCurVideo, moduleVideoLinks}) => {
+const ModuleBody = ({moduleNum, title, curVideo, setCurVideo, moduleVideoLinks, moduleCommonQuestionsList}) => {
   return (
     <div className='module-body'>
       <div className='row1'>
@@ -26,7 +28,11 @@ const ModuleBody = ({moduleNum, title, curVideo, setCurVideo, moduleVideoLinks})
             moduleVideoLinks={moduleVideoLinks}
         /> 
       </div>
-      <div className='row3'>=
+      <div className='row3'>
+        <CommonQuestions
+          moduleCommonQuestionsList={moduleCommonQuestionsList}
+        />
+        <Resources />
 
 
       </div>

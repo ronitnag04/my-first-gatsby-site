@@ -33,9 +33,6 @@ const ModuleVideoLink = ({videoId, videoName, curVideo, setCurVideo}) => {
   )
 }
 
-
-
-
 const ModuleVideoLinksTab = ({curVideo, setCurVideo, moduleVideoLinks}) => {
   return (
     <div className='module-video-links-container'>

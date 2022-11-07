@@ -20,6 +20,21 @@ const ModuleVideoLinksDict = {
     'title':'For & While Loops'}
 }
 
+const ModuleCommonQuestionsList = [
+  {'question':"How should you clean a dataset with null values?",
+   'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
+   'instructor-name':'Random Instructor'
+  },
+  {'question':"How should you clean a dataset with null values?",
+   'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
+   'instructor-name':'Random Instructor'
+  },
+  {'question':"How should you clean a dataset with null values?",
+   'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
+   'instructor-name':'Random Instructor'
+  },
+]
+
 
 const IndexPage = () => {
   const [curVideo, setCurVideo] = useState(1)
@@ -35,6 +50,7 @@ const IndexPage = () => {
           curVideo = {curVideo}
           setCurVideo = {setCurVideo}
           moduleVideoLinks = {ModuleVideoLinksDict}
+          moduleCommonQuestionsList = {ModuleCommonQuestionsList}
         />
       </div>
       
@@ -45,4 +61,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Title</title>
+export const Head = () => <title>Module 2: Python & Numpy</title>
