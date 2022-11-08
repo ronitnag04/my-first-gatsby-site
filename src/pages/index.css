@@ -144,6 +144,10 @@ h1{
     font-size: 15px;
 }
 
+.module-video-link-button:hover{
+    filter:contrast(50%)
+}
+
 
 .module-header{
     line-height: 15px;
@@ -207,9 +211,9 @@ h1{
     height:400px;
 }
 
-.common-questions-line{
+.common-questions-line, .resources-line{
     height:4px;
-    margin-top: -2px;
+    margin-top: 2px;
     border-width: 0px;
     background-color: white;
 }
@@ -217,6 +221,28 @@ h1{
 .questions-container{
     padding-left: 40px;
     padding-right: 40px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    opacity:100%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    width: 3px;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    filter: contrast(80%);
 }
 
 .common-questions-question{
@@ -236,11 +262,33 @@ h1{
 }
 
 
-
 .resources-container{
     width:24%;
     margin-left: 3%;
     background-color: #214667;
     border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    overflow-y:auto;
+    height:400px;
 }
+
+.resources-icon{
+    width:80%;
+    padding-top: 5%;
+}
+
+.resources-icon:hover{
+    filter:contrast(60%)
+}
+
+
+.inner-resources-container{
+    text-align: center;
+    padding-top: 5px;
+}
+
 

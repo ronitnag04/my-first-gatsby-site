@@ -7,7 +7,11 @@ import Resources from './Resources'
 
 
 
-const ModuleBody = ({moduleNum, title, curVideo, setCurVideo, moduleVideoLinks, moduleCommonQuestionsList}) => {
+const ModuleBody = ({moduleNum, title, 
+                    curVideo, setCurVideo, 
+                    moduleVideoLinks, 
+                    moduleCommonQuestionsList, 
+                    moduleResourcesIconsLinks}) => {
   return (
     <div className='module-body'>
       <div className='row1'>
@@ -32,7 +36,9 @@ const ModuleBody = ({moduleNum, title, curVideo, setCurVideo, moduleVideoLinks, 
         <CommonQuestions
           moduleCommonQuestionsList={moduleCommonQuestionsList}
         />
-        <Resources />
+        <Resources 
+          moduleResourcesIconsLinks={moduleResourcesIconsLinks}
+        />
 
 
       </div>

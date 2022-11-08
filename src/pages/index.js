@@ -5,6 +5,10 @@ import Sidebar from "../components/Sidebar"
 import ModuleBody from "../components/ModuleBody"
 import { useState } from 'react'
 
+import deepnoteIcon from '../images/Deepnote Button.png'
+import googleFormsIcon from '../images/Google Forms Button.png'
+import youtubeIcon from '../images/Youtube Button.png'
+
 const ModuleVideoLinksDict = {
   1:{'link':'https://www.youtube.com/embed/4EaZQM4_Dhw',
      'title':'Introduction to Python'},
@@ -35,6 +39,21 @@ const ModuleCommonQuestionsList = [
   },
 ]
 
+const ModuleResourcesIconsLinks = [
+  {'name': 'Deepnote',
+   'icon': deepnoteIcon,
+   'link': 'https://www.google.com'
+  },
+  {'name': 'Google Forms',
+   'icon': googleFormsIcon,
+   'link': 'https://www.google.com'
+  },
+  {'name': 'Youtube',
+   'icon': youtubeIcon,
+   'link': 'https://www.google.com'
+  },
+]
+
 
 const IndexPage = () => {
   const [curVideo, setCurVideo] = useState(1)
@@ -51,6 +70,7 @@ const IndexPage = () => {
           setCurVideo = {setCurVideo}
           moduleVideoLinks = {ModuleVideoLinksDict}
           moduleCommonQuestionsList = {ModuleCommonQuestionsList}
+          moduleResourcesIconsLinks = {ModuleResourcesIconsLinks}
         />
       </div>
       
