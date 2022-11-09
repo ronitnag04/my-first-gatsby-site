@@ -2,6 +2,7 @@ import React from 'react'
 import image from '../images/basic_logo.png'
 
 
+
 const NavbarLink = ({link, name}) => {
     return(
         <div className='navbar-link-container'>
@@ -27,10 +28,13 @@ const NavbarLinks = () => {
 
 
 
-const Navbar = () => {
+const Navbar = ({showSidebar, setShowSidebar}) => {
   return (
+    
     <header className='navbar'>
         <img className='logo' src={image} alt='BDAB Logo'></img>
+        
+
         <NavbarLinks/>
     </header>
   )

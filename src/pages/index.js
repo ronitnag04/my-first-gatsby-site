@@ -37,6 +37,14 @@ const ModuleCommonQuestionsList = [
    'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
    'instructor-name':'Random Instructor'
   },
+  {'question':"How should you clean a dataset with null values?",
+  'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
+  'instructor-name':'Random Instructor'
+ },
+ {'question':"How should you clean a dataset with null values?",
+  'answer':"It depends on the situation! Sometimes, it is best to fill it with bound, such as 0 or float(‘inf’). Other times, it makes sense to fill in values with the average of other data. You can use the built-in pd.fillna() function for this!",
+  'instructor-name':'Random Instructor'
+ },
 ]
 
 const ModuleResourcesIconsLinks = [
@@ -57,12 +65,28 @@ const ModuleResourcesIconsLinks = [
 
 const IndexPage = () => {
   const [curVideo, setCurVideo] = useState(1)
+  const [showSidebar, setShowSidebar] = useState(false)
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar
+          showSidebar = {showSidebar}
+          setShowSidebar = {setShowSidebar}
+      ></Navbar>
       
       <div className="main-body-container">
-        <Sidebar></Sidebar>
+        
+
+
+        
+        <Sidebar
+          showSidebar = {showSidebar}
+          setShowSidebar = {setShowSidebar}
+        
+        ></Sidebar>
+
+
+
+
         <ModuleBody 
           moduleNum={2}
           title={'Python & Numpy'}

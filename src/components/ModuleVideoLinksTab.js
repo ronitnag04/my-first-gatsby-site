@@ -2,6 +2,7 @@ import React from 'react'
 import videoIconWhite from '../images/play-button-white.png'
 import videoIconBlue from '../images/play-button-blue.png'
 
+
 const ModuleVideoLink = ({videoId, videoName, curVideo, setCurVideo}) => {
   return (
     <button 

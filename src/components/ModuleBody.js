@@ -26,6 +26,7 @@ const ModuleBody = ({moduleNum, title,
               videoLink={moduleVideoLinks[curVideo]['link']}
           />
         </div>
+        
         <ModuleVideoLinksTab
             curVideo={curVideo}
             setCurVideo={setCurVideo}

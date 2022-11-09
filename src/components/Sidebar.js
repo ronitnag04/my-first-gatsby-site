@@ -1,5 +1,7 @@
 import React from 'react'
 
+import hamburgerIcon from '../images/hamburger-icon.png'
+
 
 const SidebarLink = ({moduleNum, title, isCurrent}) => {
   return (
@@ -13,6 +15,7 @@ const SidebarLink = ({moduleNum, title, isCurrent}) => {
 
 const SidebarLinks = () => {
   return (
+        
     <div className='sidebar-links'>
         
         <SidebarLink 
@@ -63,6 +66,8 @@ const SidebarLinks = () => {
         />
 
     </div>
+    
+    
   )
 }
 
@@ -71,12 +76,33 @@ const SidebarLinks = () => {
 
 
 
-const Sidebar = () => {
+const Sidebar = ({showSidebar, setShowSidebar}) => {
   return (
+    
     <div className='sidebar'>
-        <SidebarLinks/>
+        <button
+          onClick={() => setShowSidebar(!showSidebar)}
+          style={{
+            backgroundColor:'transparent',
+            border:'none',
+            cursor:'pointer',
+            outline:'none',
+            paddingLeft:'0px'}}
+            >
+            <img src={hamburgerIcon} alt='sidebar toggle icon'
+                style={{
+                height: '4vh',
+                filter: 'hue-rotate(100%)'
+                }}
+            
+            >
 
+          </img>
+        </button>
+        {showSidebar === true ? <SidebarLinks/> : null}
     </div>
+
+    
   )
 }
 

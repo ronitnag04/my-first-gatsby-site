@@ -80,13 +80,14 @@ h1{
     padding-right:3%;
 }
 
-.sidebar-links{
+.sidebar-links:c{
     position: relative;
 }
 
 
+
 .sidebar-link-container{
-    margin: 0 1vw;
+    margin: 0 0vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: white;
@@ -95,7 +96,7 @@ h1{
 }
 
 .sidebar-link:hover{
-    text-decoration: underline;
+    -webkit-text-stroke-width: 1px;
 }
 
 
