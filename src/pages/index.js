@@ -66,6 +66,7 @@ const ModuleResourcesIconsLinks = [
 const IndexPage = () => {
   const [curVideo, setCurVideo] = useState(1)
   const [showSidebar, setShowSidebar] = useState(true)
+  
   return (
     <>
       <Navbar
